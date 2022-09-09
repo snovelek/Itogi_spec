@@ -17,7 +17,7 @@ Console.Write("Введите количество строк - ");
 int n = Convert.ToInt32(Console.ReadLine()); 
 string[] startMass = new string[n]; 
 for (int i = 0; i < n; i++){
-    Console.Write("Введите строку №{0}:\r\n    ", i + 1);
+    Console.Write($"Введите строку №{i+1}:\n    ");
     startMass[i] = Console.ReadLine();
 }
 
@@ -38,5 +38,5 @@ for (int i = 0; i < startMass.GetLength(0); i++){
         count++;
     }
 }
-Console.WriteLine(string.Join(", ",newMass));
+Console.WriteLine(string.Join(",",newMass));
 
